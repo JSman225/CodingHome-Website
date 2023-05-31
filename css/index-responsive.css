@@ -1,0 +1,114 @@
+@media only screen and (max-width: 1200px) {
+    .section-1 img{
+        width:90%;
+    }
+    .section-1 .content-container{
+        gap:40px;
+    }
+    .section-1 .content-container .title{
+        width: 60%;
+        text-align: center !important;
+    }
+    .section-1 .button-container{
+        justify-content: center;
+    }
+    .section-1 .temp-class-3{
+        justify-content: center;
+    }
+    .section-2 .img-container{
+        height:350px;
+    }
+    .section-2 .content-container{
+        width:85%;
+    }
+    .section-2 .content-container h1{
+        font-size:38px;
+    }
+    .section-2 .content-container p{
+        font-size:16px;
+    }
+    .section-2 .content-container .content-2{
+        width:90%;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    .section-2 .features-container .content .text{
+        align-items: center !important;
+    }
+    .section-2 .text h1{
+       text-align: center !important;     
+    }
+    .section-2 .text p{
+        text-align: center !important;     
+     }
+    .section-2 .features-container .item-container{
+        height:300px;
+        justify-content: flex-start;
+    }
+    .section-2 .features-container .content{
+        gap:50px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .navbar-button-container .navbar-login-button{
+        display: none;
+    }
+    .navbar-button-container .navbar-signup-button{
+        display: none;
+    }
+    .navbar-button-container .menu{
+        display: block !important;
+    }
+    .navbar-content-nav{
+        display:none;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .section-2 .content-container h1{
+        font-size:32px;
+    }
+    .section-2 .content-container p{
+        font-size:14px;
+    }
+    .section-1{
+        padding-top:60px;
+    }
+}
+@media only screen and (max-width: 750px) {
+    .section-2 .img-container{
+        height:50vw;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .section-2 .content-container h1{
+        font-size:26px;
+    }
+    .section-2 .content-container p{
+        font-size:14px;
+    }
+}
+@media only screen and (max-width: 435px) {
+    .section-2 .text h1{
+        font-size: 30px;
+        width:95%;  
+     }
+     .section-2 .text p{
+         text-align: center !important;     
+      }
+    .section-2 .text{
+        height:320px;
+    }
+}
+@media only screen and (max-width: 401px) {
+    .section-2 .text{
+        height:280px;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .section-2 .content-container h1{
+        font-size:20px;
+    }
+    .section-2 .content-container p{
+        font-size:14px;
+    }
+}
