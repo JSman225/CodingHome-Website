@@ -140,7 +140,7 @@
                         <button class="button-2 pointer">ABOUT</button>
                     </div>
                     <div class="temp-class-3">
-                        <p>Users Currently Online · <script>var response = fetch('https://discord.com/api/guilds/1081208082530570240/widget.json'); var data = response.json(); console.log(data.presence_count)</script></p>
+                        <p>Online · <script>fetch('https://discord.com/api/guilds/1081208082530570240/widget.json').then(response => response.json()).then(response => console.log(response)).catch(err => console.error(err));</script></p>
                     </div>
                 </div>
             </div>
