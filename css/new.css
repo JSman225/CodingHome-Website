@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300&display=swap');
 * {
     scrollbar-width: .5vw;
-    scrollbar-color: #298AFC rgba(219, 219, 220, 0);
+    scrollbar-color: #fc2929 rgba(219, 219, 220, 0);
     transition: all .2s;
     scroll-behavior: smooth;
   }
@@ -17,7 +17,7 @@
   }
   
   *::-webkit-scrollbar-thumb {
-    background-color: #298AFC;
+    background-color: #fc2929;
     border-radius: .5vw;
   }
 .menu-overlay{
@@ -45,7 +45,7 @@
 }
 
 .menu-overlay .fancyText {
-    background-color:#298AFC;
+    background-color:#fc2929;
     background-size: 200% 100%;
     background-position: -100%;
     display: inline-block;
@@ -177,8 +177,8 @@ nav li{
     letter-spacing: 1px;
 }
 .navbar-signup-button{
-    background:#298AFC;
-    border: solid #298AFC 1px;
+    background:#fc2929;
+    border: solid #fc2929 1px;
     width:170px;
     height:38px;
     border-radius:8px;
@@ -358,8 +358,8 @@ nav li{
     width:184px;
     letter-spacing: 1.1px;
     line-height: 14px;
-    background-color: #298AFC;
-    border: 1px solid #298AFC;
+    background-color: #fc2929;
+    border: 1px solid #fc2929;
     border-radius: 8px;
 }
 .button-container .button-2{
@@ -374,7 +374,9 @@ nav li{
     border-radius: 8px;
     margin-left:10px;
 }
-
+.red{
+    color: #fc2929 !important;
+}
 .pointer{
     cursor:pointer;
 }
@@ -598,8 +600,8 @@ nav li{
     font-size:14px;
     letter-spacing: 1.1px;
 
-    background-color: #298AFC;
-    border: 1px solid #298AFC;
+    background-color: #fc2929;
+    border: 1px solid #fc2929;
     border-radius: 8px;
 }
 

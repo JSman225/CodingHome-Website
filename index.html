@@ -26,11 +26,11 @@
 <body>
 <div id="menu" class="menu-overlay hidden">
     <div class="content-container">
-        <h1 class="fancyText pointer">How To Use</h1>
+        <h1 class="fancyText pointer">Coding Resources</h1>
         <br>
         <h1 class="fancyText pointer">Community</h1>
         <br>
-        <h1 onclick="window.location.replace('https://deltasoft-ai.netlify.app/donate')" class="fancyText pointer">Donate</h1>
+        <h1 onclick="window.location.replace('https://discord.gg/pgGfhDVrmS')" class="fancyText pointer">Join Us</h1>
         <br>
         <i onclick="menu()" class="pointer fa-solid fa-xmark fa-2xl"></i>
     </div>
@@ -38,12 +38,12 @@
 <header id="navbar" class="navbar">
     <div class="navbar-container">
         <div style="justify-content: left;" class="navbar-content">
-            <img onclick="window.location.replace('https://deltasoft-ai.netlify.app')" class="navbar-logo pointer" src="assets/logo.svg">
+            <img onclick="window.location.replace('https://codinghome.netlify.app')" class="navbar-logo pointer" src="assets/logo.svg">
         </div>
         <nav class="navbar-content-nav">
             <ul class="navbar-content-nav-menu">
                 <li onmouseenter="showDropdown()" class="dropdown-block">
-                    <a class="pointer">How To Use<i style="margin-left:5px;" class="fa-solid fa-chevron-down"></i></a>
+                    <a class="pointer">Coding Resources<i style="margin-left:5px;" class="fa-solid fa-chevron-down"></i></a>
                     <div id="dropdown" class="dropdown-container">
                         <div class="content-container">
                             <div style="width:500px;" class="element-container">
@@ -112,14 +112,11 @@
                         </div>
                     </div>
                 </li>
-                <li class="pointer">
-                    <a onclick="window.location.replace('https://deltasoft-ai.netlify.app/donate')">Donate 💖</a>
-                </li>
             </ul>
         </nav>
         <div class="navbar-content">
             <div class="navbar-button-container">
-                <button  onclick="location.href = 'https://discord.gg/v65X6AHt25'" class="navbar-signup-button pointer">DISCOVER NOW</button>
+                <button  onclick="location.href = 'https://discord.gg/pgGfhDVrmS'" class="navbar-signup-button pointer">JOIN US NOW</button>
                 <img onclick="menu()" style="transform: scaleX(-1); display: none;" class="menu pointer" src="assets/Menu.svg">
             </div>
         </div>
@@ -131,17 +128,27 @@
             <div class="content title">
                 <div>
                     <div>
-                        <span class="temp-class-1">DELTASOFT AI</span>
-                        <h1>Hands down, best coding server out there</h1>
-                        <p class="temp-class-2">Get the coding help <i>you deserve</i>.</p>
+                        <span class="temp-class-1">CODINGHOME DISCORD SERVER</span>
+                        <h1>Hands down, best <b class="red">coding</b> server out there</h1>
+                        <p class="temp-class-2">Get the coding help <b><i class="red">you deserve</i></b>.</p>
                     </div>
                     <div class="button-container">
-                        <button onclick="location.href = 'https://discord.gg/v65X6AHt25'" class="button-1 pointer">DISCOVER NOW</button>
+                        <button onclick="location.href = 'https://discord.gg/pgGfhDVrmS'" class="button-1 pointer">JOIN US NOW</button>
                         <button class="button-2 pointer">ABOUT</button>
                     </div>
                     <div class="temp-class-3">
-                        <p>Online · <script>fetch('https://discord.com/api/guilds/1081208082530570240/widget.json').then(response => response.json()).then(response => console.log(response)).catch(err => console.error(err));</script></p>
+                        <p><b><span id="presence">0</span></b>&nbsp;&nbsp;Users online right now!&nbsp;&nbsp;Come join us!</p>
                     </div>
+                    <script>
+                        var count;
+                    async function fetchIt() {
+                        await fetch('https://discord.com/api/guilds/1081208082530570240/widget.json')
+                    .then(response => response.json())
+                    .then(response => count = response.presence_count)
+                    .catch(err => console.error(err));
+                    document.getElementById('presence').innerHTML = count;
+                    } fetchIt();
+                    </script>
                 </div>
             </div>
             <div style="flex-grow: 1;" class="content">
