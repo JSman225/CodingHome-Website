@@ -58,7 +58,7 @@
   
   .menu-overlay .fancyText:before{
     content: '';
-    background: #54b3d6;
+    background: #fc2929;
     display: block;
     position: absolute;
     bottom: -3px;
@@ -246,13 +246,13 @@ nav li{
 }
 .dropdown-container .element:hover{
     transition:all .3s;
-    background-color:#298bfc38;
+    background-color:#fc292938;
 }
 .dropdown-container .element img{
     width:40px;
     height:40px;
     padding:10px;
-    background-color:#298bfc38;
+    background-color:#fc292938;
     border-radius: 10px;
 }
 .dropdown-container .element .text-container{
@@ -341,6 +341,7 @@ nav li{
     margin:0px;
     margin-top:32px;
     tab-size: 4;
+    gap:10px;
 }
 .temp-class-3{
     font-size:14px;
@@ -372,7 +373,6 @@ nav li{
     background-color: #9e08fc00;
     border: 1px solid #ffffff;
     border-radius: 8px;
-    margin-left:10px;
 }
 .red{
     color: #fc2929 !important;
